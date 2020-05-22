@@ -1,0 +1,65 @@
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha256-98vAGjEDGN79TjHkYWVD4s87rvWkdWLHPs5MC3FvFX4=" crossorigin="anonymous"></script>
+  </head>
+  
+  <body style="background-color:black">
+    <div style="background-color:rgb(0, 0, 0)">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li class="active"><a routerLink="carousel" routerLinkActive="active">HOME</a></li>
+            
+            <li ><a routerLink="tvav" routerLinkActive="active">TV&AV</a></li>
+            <li><a routerLink="appliances" routerLinkActive="active">HOME APPLIANCES</a></li>
+            <li><a routerLink="mobile" routerLinkActive="active">MOBILE</a></li>
+            <li><a routerLink="computing" routerLinkActive="active">COMPUTING</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li ><a routerLink="signup" routerLinkActive="active"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a routerLink="login" routerLinkActive="active"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </nav>
+     
+
+      <div>  
+           <router-outlet></router-outlet>  
+      </div>
+      <div class= "end">
+        <table style="background-color:rgb(20, 20, 20)" class="table ">
+          <tr>
+            <td >
+              <p style="text-align: center"><button type="button" id="botton" class="btn btn-outline-primary" style="background-color: rgb(20, 20, 20)"(click)="end()">About-Us</button></p>
+              <p style="text-align: center"><button type="button"id="botton" class="btn btn-outline-primary" style="background-color: rgb(20, 20, 20)"(click)="end()">Contact</button></p>
+              <p style="text-align: center"><button type="button" id="botton"class="btn btn-outline-primary" style="background-color:rgb(20, 20, 20)"(click)="end()">Store Locator</button></p>
+            </td>
+            
+            <td>
+                <p style="text-align: center"><button type="button" id="botton"class="btn btn-outline-primary" style="background-color:rgb(20, 20, 20)"(click)="end()">Phone</button></p>
+                <p style="text-align: center"><button type="button" id="botton"class="btn btn-outline-primary" style="background-color:rgb(20, 20, 20)"(click)="end()">Email</button></p>
+                <p style="text-align: center"><button type="button" id="botton"class="btn btn-outline-primary" style="background-color: rgb(20, 20, 20)"(click)="end()">Find Offers</button></p>
+        
+            </td>
+          </tr>
+          
+        </table>
+        <div class="jumbo">     
+          <button style="text-align: center;" type="button"id="buton" class="btn btn-danger" (click)="logout()">Logout</button>
+      </div>
+        </div>
+        <p  style="text-align: center" id="endd">Samsung India encourages its customers for e-waste recycling.   Samsung reserves the right to modify or discontinue this offer at any time.   Additional terms, including terms that govern the resolution of disputes, apply. </p> 
+        
+      </div>
+
+
+
+
+    </body>
+
+

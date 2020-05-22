@@ -1,0 +1,180 @@
+<body style="background-color: rgb(255, 255, 255)">
+
+    <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+
+
+
+
+    
+    <div ><img class="crop"src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/Wireless/CEEX/Samsung/MSeries/19thFeb/D9052079_IN_WLME_Samsung_M_Series_19th_Feb_PC_LP_1500x550._CB454448199_.jpg" align="center" width="100%"> </div>
+
+    <p id ="notify" align="center" ><button type="button" class="btn btn-outline-primary btn-lg"  style="background-color: rgb(44, 39, 39)">Notify Me !!!</button>
+</p>
+<div class="container">
+    <div class="container text-center">
+        <h1 id ="trend" class="jumbotron" style="background-color:rgb(35, 41, 37)">Trending</h1> 
+           <div class="row">
+             <div id ="col" class="col-sm-4">
+
+               <p><font size="4"><strong>Galaxy-M10</strong></font></p><br>
+               <img id ="trending"src="https://www.gizlogic.com/wp-content/uploads/2019/01/Samsung-Galaxy-M10.jpg" width = "350px" height="350px" alt="Random Name">
+               <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245 245, 24)">Buy Now</button>
+           </div>
+             <div id ="col" class="col-sm-4">
+               <p><font size="4"><strong>Galaxy-J6</strong></font></p><br>
+               <img id ="trending"src="https://gadgetstouse.com/wp-content/uploads/2018/05/Samsung-Galaxy-J6-2.jpg" width ="350px" height ="350px"alt="Random Name">
+               <button  type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+           </div>
+             <div id ="col" class="col-sm-4">
+               <p ><font size="4"><strong>Galaxy-J8</strong></font></p><br>
+               <img id ="trending" src="https://cdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-j8-j800-5.jpg" width = "350px" height="350px"  alt="Random Name">
+               <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+           </div>
+           </div>
+         </div>  
+ 
+
+      <div class="container text-center">
+        <h1 id ="trend" class="jumbotron" style="background-color:rgb(35, 41, 37)">Best Seller</h1> 
+           <div class="row">
+             <div id ="col" class="col-sm-4">
+
+               <p><font size="4"><strong>Galaxy-A8</strong></font></p><br>
+               <img id ="trending"src="https://techprolonged.com/wp-content/uploads/2017/12/Galaxy-A8-Orchid-Grey.jpg" width = "350px" height="350px" alt="Random Name">
+               <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+           </div>
+             <div id ="col" class="col-sm-4">
+               <p><font size="4"><strong>Galaxy-S10-Plus</strong></font></p><br>
+               <img id ="trending"src="https://www.soyacincau.com/wp-content/uploads/2018/12/181213-olixar-galaxy-s10-plus.jpg" width ="350px" height ="350px"alt="Random Name">
+               <button  type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+           </div>
+             <div id ="col" class="col-sm-4">
+               <p ><font size="4"><strong>Galaxy-S9-Plus</strong></font></p><br>
+               <img id ="trending" src="https://cdn.eglobalcentral.eu/images/detailed/62/samsung-galaxy-s9-plus-g965fd-dual-sim-4g-vvw8fd.jpg" width = "350px" height="350px"  alt="Random Name">
+               <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+           </div>
+           </div>
+         </div>  
+        </div>
+<style>
+#trending{
+    padding-bottom: 20px;
+}
+
+#notify{
+
+    color:white;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn {
+    border-color: rgb(0, 0, 0);
+    border-width:1px;  
+    padding-left: 50px;
+    padding-right: 50px;  
+}
+
+#trend{
+    color: burlywood;
+}
+
+#col{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+
+
+
+#col{
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: -webkit-transform ease-out 0.5s, background 1s;
+    -moz-transition: -moz-transform ease-out 0.5s, background 1s;
+    transition: transform ease-out 0.5s, background 1s;
+    color: rgb(65, 62, 62);    
+}
+    #col:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    opacity: 0;
+    -webkit-transform: scale(01.05);
+    -moz-transform: scale(01.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+    #col:hover {
+    background: rgba(255, 254, 255, 0);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    color: rgb(3, 3, 3);
+}
+#col:hover i {
+    color: rgb(0, 0, 0);
+}
+#col:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(134, 132, 132, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(129, 126, 126, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(207, 174, 174, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(126, 122, 122, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(172, 167, 167, 0.007), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(105, 98, 98, 0.397), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+</style>
+
+
+
+</body>

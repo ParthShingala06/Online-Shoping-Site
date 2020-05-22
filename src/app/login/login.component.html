@@ -1,0 +1,50 @@
+<div><img class="crop"src="http://s3.amazonaws.com/stripgenerator/strip/17/09/75/00/00/full.png" style="border-color: blanchedalmond" align="center"> </div>
+
+  <div class="jumbotro" style="margin-top:-2%;">
+  <div class="container" >
+      
+      <div  class="row" >
+          <div class="col-md-6 offset-md-3">
+              <h3 id="acc">Create An Account </h3>
+              <form [formGroup]="registerForm">
+                
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" formControlName="email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="name" class="form-control" >
+                   
+                  </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" class="form-control" formControlName="password">
+                  <label class="error">{{errorMessage}}</label>
+                  <label class="success">{{successMessage}}</label>
+                </div>
+                <div>
+                <a routerLink="../signup" routerLinkActive="active"><span class="glyphicon glyphicon-log-in"></span> Already have an account?</a>
+                </div>
+                  <div id="reg" class="form-group">
+                      <button type="submit"class="btn btn-primary" (click)="tryRegister(registerForm.value)">Register</button>
+                  </div>
+
+                  <div class="row">
+                    <div class="col">
+                      <button id="butt"type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()"><span class="glyphicon glyphicon-user"></span> Register with Facebook</button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <button id="butt"type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()"><span class="glyphicon glyphicon-envelope"></span> Register with Google</button>
+                    </div>
+                </div>
+              </form>
+          </div>
+      </div>
+  
+      
+      
+  </div>
+  </div>

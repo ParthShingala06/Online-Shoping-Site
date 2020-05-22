@@ -1,0 +1,62 @@
+
+.btn {
+    border-color: rgb(0, 0, 0);
+    border-width:1px;  
+    padding-left: 50px;
+    padding-right: 50px;  
+}
+
+
+#col{
+    
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+
+#col1{
+    
+    padding-top: 70px;
+    padding-left: 30px;
+}
+
+
+#text1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+#text3{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 30px;
+    color: chocolate;
+   
+}
+#mrp{
+
+    text-decoration-line: line-through;
+}
+
+#save{
+    font-size: 20px;
+}
+
+#end{
+    font-size: 2px;
+}
+
+.btn{
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 30px;
+    border-color:black; 
+    padding-bottom: 10px;
+    padding-top: 10px;                  
+   
+}
+
+
+#text2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-bottom: 30px;
+}

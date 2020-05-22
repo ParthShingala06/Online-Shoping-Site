@@ -1,0 +1,50 @@
+<div><img class="crop"src="http://s3.amazonaws.com/stripgenerator/strip/17/09/75/00/00/full.png" style="border-color: blanchedalmond" align="center"> </div>
+
+  <div class="jumbotro" style="margin-top:-2%;">
+  <div class="container" >
+      
+      <div  class="row" >
+          <div class="col-md-6 offset-md-3">
+              <h3 id="acc">Sign In </h3>
+              <form id="f" name="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+                   
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="text" class="form-control" placeholder="Enter Email ID" name="email" [(ngModel)]="model.email" #email="ngModel" [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required email />
+                      <div *ngIf="f.submitted && email.invalid" class="invalid-feedback">
+                          <div *ngIf="email.errors.required">Email is required</div>
+                          <div *ngIf="email.errors.email">Email must be a valid email address</div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" placeholder="Enter Password" name="password" [(ngModel)]="model.password" #password="ngModel" [ngClass]="{ 'is-invalid': f.submitted && password.invalid }" required minlength="6" />
+                      <div *ngIf="f.submitted && password.invalid" class="invalid-feedback">
+                          <div *ngIf="password.errors.required">Password is required</div>
+                          <div *ngIf="password.errors.minlength">Password must be at least 6 characters</div>
+                      </div>
+                  </div>
+
+                
+    
+                  <div id="reg"  class="form-group">
+                      <button class="btn btn-primary"(click)="tryLogin(loginForm.value)">Sign In</button>
+                  </div>
+              </form>
+              <div class="row">
+                <div class="col">
+                  <button id="butt"type="button" class="btn btn-primary btn-block" (click)="tryFacebookLogin()"><span class="glyphicon glyphicon-user"></span> Register with Facebook</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <button id="butt"type="button" class="btn btn-danger btn-block" (click)="tryGoogleLogin()"><span class="glyphicon glyphicon-envelope"></span> Register with Google</button>
+                </div>
+            </div>
+          </div>
+      </div>
+  
+      
+      
+  </div>
+  </div>

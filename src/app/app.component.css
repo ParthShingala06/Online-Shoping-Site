@@ -1,0 +1,110 @@
+.end{
+
+    padding-top: 40px;
+
+    
+    
+}
+
+.jumbo{
+    text-align: center;
+}
+
+#buton{
+    padding-left: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 150px;
+    background-color: crimson;
+    border-radius: 20px;
+}
+
+#endd{
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-top: 5px;
+    color: rgb(144, 158, 170);
+    font-size: 10px;
+    background-color: black;
+}
+
+
+
+#botton{
+    background: rgba(0, 0, 0, 0);
+    -webkit-transition: -webkit-transform ease-out 0.5s, background 1s;
+    -moz-transition: -moz-transform ease-out 0.5s, background 1s;
+    transition: transform ease-out 0.5s, background 1s;
+    color: rgb(155, 149, 70);    
+}
+.btn:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(2, 2, 14, 0.1);
+    opacity: 0;
+    -webkit-transform: scale(01.05);
+    -moz-transform: scale(01.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.btn:hover {
+    background: rgba(1, 0, 10, 0.05);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+    -ms-transform: scale(1.0);
+    transform: scale(1.0);
+    color: #fff;
+}
+.btn:hover i {
+    color: #fff;
+}
+.btn:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+

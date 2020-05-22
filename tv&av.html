@@ -1,0 +1,187 @@
+<body style="background-color: rgb(255, 255, 255)">
+  
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  </head>
+
+
+
+
+
+  <div ><img class="crop"src="https://i.ytimg.com/vi/7i5ecqqMTpo/maxresdefault.jpg" align="center" height="550px" width="100%"> </div>
+
+
+  <p id ="notify" align="center" ><button type="button" class="btn btn-outline-primary btn-lg"  style="background-color: rgb(44, 39, 39)">Coming Soon - Notify Me </button>
+</p>
+<div class="container">
+  <div class="container text-center">
+      <h1 id ="trend" class="jumbotron" style="background-color:rgb(35, 41, 37)">Trending</h1> 
+         <div class="row">
+           <div id ="col" class="col-sm-4">
+
+             <p><font size="4"><strong>4K-UHD-TV-MU6100</strong></font></p><br>
+             <img id ="trending"src="https://images.samsung.com/is/image/samsung/uk-4k-uhd-tv-mu6100-ue55mu6100kxxu-black-65804679?$PD_GALLERY_L_JPG$" width = "400px" height="350px" alt="Random Name">
+             <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245 245, 24)">Buy Now</button>
+         </div>
+           <div id ="col" class="col-sm-4">
+             <p><font size="4"><strong>Premium-Tube</strong></font></p><br>
+             <img id ="trending"src="http://novo.press/wp-content/uploads/2012/03/Samsung-Premium-tube.jpg" width ="350px" height ="350px"alt="Random Name">
+             <button  type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+         </div>
+           <div id ="col" class="col-sm-4">
+             <p ><font size="4"><strong>Series 4 LED Smart TV</strong></font></p><br>
+             <img id ="trending" src="https://images.samsung.com/is/image/samsung/my-suhd-js8000-ua55js8000kxxm-002-r-perspective-silver?$PD_GALLERY_JPG$" width = "350px" height="350px"  alt="Random Name">
+             <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+         </div>
+         </div>
+       </div>  
+
+
+    <div class="container text-center">
+      <h1 id ="trend" class="jumbotron" style="background-color:rgb(35, 41, 37)">Best Seller</h1> 
+         <div class="row">
+           <div id ="col" class="col-sm-4">
+
+             <p><font size="4"><strong>Curved UHD Smart Tv</strong></font></p><br>
+             <img id ="trending"src="http://1225924211.rsc.cdn77.org/76736/mobile/samsung-49-curved-uhd-smart-tv-ue49ku6640.jpg" width = "400px" height="350px" alt="Random Name">
+             <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+         </div>
+           <div id ="col" class="col-sm-4">
+             <p><font size="4"><strong>Wireless Speaker</strong></font></p><br>
+             <img id ="trending"src="https://s1.euronics.ee/UserFiles/Products/Images/126464-wam7500-001-front-black.png" width ="350px" height ="350px"alt="Random Name">
+             <button  type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+         </div>
+           <div id ="col" class="col-sm-4">
+             <p ><font size="4"><strong>Curved LED Smart  TV</strong></font></p><br>
+             <img id ="trending" src="https://static.mystore.lk/cache/products/21159/mystore-lk-samsung-ku6300-img-2-460x460-0-0.jpg" width = "350px" height="350px"  alt="Random Name">
+             <button type="button" class="btn btn-outline-primary" style="background-color: rgb(245, 245, 245)">Buy Now</button>
+         </div>
+         </div>
+       </div>  
+      </div>
+
+
+    <style>#trending{
+    padding-bottom: 20px;
+}
+
+#notify{
+
+    color:white;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.btn {
+    border-color: rgb(0, 0, 0);
+    border-width:1px;  
+    padding-left: 50px;
+    padding-right: 50px; 
+    padding-top: 15px;
+    padding-bottom: 15px; 
+}
+
+#trend{
+    color: burlywood;
+}
+
+#col{
+    padding-bottom: 40px;
+    padding-top: 30px;
+}
+
+
+
+
+
+#col{
+    background: rgba(255, 255, 255, 0);
+    -webkit-transition: -webkit-transform ease-out 0.5s, background 1s;
+    -moz-transition: -moz-transform ease-out 0.5s, background 1s;
+    transition: transform ease-out 0.5s, background 1s;
+    color: rgb(65, 62, 62);    
+}
+    #col:after {
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
+    opacity: 0;
+    -webkit-transform: scale(01.05);
+    -moz-transform: scale(01.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+    #col:hover {
+    background: rgba(255, 254, 255, 0);
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    color: rgb(3, 3, 3);
+}
+#col:hover i {
+    color: rgb(0, 0, 0);
+}
+#col:hover:after {
+    -webkit-animation: sonarEffect 1.3s ease-out 75ms;
+    -moz-animation: sonarEffect 1.3s ease-out 75ms;
+    animation: sonarEffect 1.3s ease-out 75ms;
+}
+@-webkit-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(134, 132, 132, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(129, 126, 126, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(255, 255, 255, 0);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@-moz-keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(207, 174, 174, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(126, 122, 122, 0), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0);
+        -moz-transform: scale(1.5);
+        opacity: 0;
+    }
+}
+@keyframes sonarEffect {
+    0% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.5;
+        box-shadow: 0 0 0 2px rgba(172, 167, 167, 0.007), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(105, 98, 98, 0.397), 0 0 10px 10px #3851bc, 0 0 0 10px rgba(0, 0, 0, 0.5);
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+
+
+#trends{
+    text-align: center;
+    color: burlywood;
+    
+}</style>
+
+</body>
